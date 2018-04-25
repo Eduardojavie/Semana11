@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eduardo Javier</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/inicio.css">	
+ <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
+</style>
+</head>
+ 
+<body>
+	<nav class="menu">
+    <ul>
+     <li class="nombre">Eduardo Javier</li>
+     <li><a href="historia.html">Historia</a></li><br>
+     <li><a href="proyecto.html">Proyectos</a></li><br>
+     <li><a href="video.html">Videos</a></li><br>
+     <li><a href="url">Campañas</a></li><br>
+    </ul>
+  </nav>
+  <section id="content">
+<div class="Slideshow" style="max-width:43%" style="max-height: 50px">
+  <img class="mySlides" src="img/img1.jpg" style="width:100%">
+  <img class="mySlides" src="img/img2.jpg" style="width:100%">
+  <img class="mySlides" src="img/img5.jpg" style="width:100%">
+  <img class="mySlides" src="img/img6.jpg" style="width:100%">
+  <img class="mySlides" src="img/img7.jpg" style="width:100%">
+  <img class="mySlides" src="img/img8.jpg" style="width:100%">
+  <img class="mySlides" src="img/img9.jpg" style="width:100%">
+  <img class="mySlides" src="img/img10.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) 
+{x[i].style.display = "none";}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}    
+x[myIndex-1].style.display = "block";  
+setTimeout(carousel, 3000);
+}
+</script>
+</section>
+<footer class="pie">
+ <p>Fotografias del 2018<br>&#169; Eduardo Javier </p>
+</footer>
+</body>
+</html>
+
+
+
